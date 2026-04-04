@@ -1,9 +1,14 @@
+import Navbar from "../components/Navbar";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white px-6">
+  <>
+    <Navbar />
+    
+    <main className="min-h-screen px-6 pt-20">
       
       {/* HERO */}
-      <section className="flex flex-col items-center justify-center h-screen text-center">
+      <section id="home" className="flex flex-col items-center justify-center h-screen text-center">
         <h1 className="text-5xl font-bold">
           Halo, saya <span className="text-blue-500">Ranifa</span>
         </h1>
@@ -13,7 +18,7 @@ export default function Home() {
       </section>
 
       {/* PROJECTS */}
-      <section className="py-20">
+      <section id="projects" className="py-20">
         <h2 className="text-3xl font-semibold mb-8">Projects</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -41,11 +46,12 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section className="py-20 text-center">
+      <section id="contact" className="py-20 text-center">
         <h2 className="text-3xl font-semibold">Contact</h2>
         <p className="text-gray-400 mt-4">email@email.com</p>
       </section>
 
     </main>
+    </>
   );
 }
